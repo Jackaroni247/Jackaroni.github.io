@@ -1,22 +1,76 @@
 <!DOCTYPE html>
-<html lang="EN">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      background-color: #000000;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio & Blog</title>
+  <meta name="description" content="Portfolio and blog of Your Name, a developer, designer, or student." />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-  <main>
-  </main>
-</body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="logo" href="index.html">Your Name</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" type="button">Toggle theme</button>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero container">
+      <p class="eyebrow">Student • Developer • Writer</p>
+      <h1>I build clean websites and write about what I learn.</h1>
+      <p>
+        Welcome to my portfolio and blog. Here I share projects, essays, and things I am learning in web development.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="projects.html">View Projects</a>
+        <a class="button button-secondary" href="blog.html">Read Blog</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="images/project-1.png" alt="Screenshot of project one" />
+          <h3>Project One</h3>
+          <p>A short description of the project and what it does.</p>
+          <a href="#">Live Demo</a>
+        </article>
+
+        <article class="card">
+          <img src="images/project-2.png" alt="Screenshot of project two" />
+          <h3>Project Two</h3>
+          <p>A second project with a different focus or stack.</p>
+          <a href="#">GitHub Repo</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Latest Posts</h2>
+      <div class="post-list">
+        <article class="post-preview">
+          <h3><a href="posts/my-first-post.html">How I Built This Site</a></h3>
+          <p class="post-meta">March 2026 • Web Development</p>
+          <p>A quick preview of the post.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Your Name</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
