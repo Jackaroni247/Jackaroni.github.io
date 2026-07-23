@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+  <!-- Space background canvas -->
+  <canvas id="space-canvas"></canvas>
+
   <header class="navbar">
     <div class="container nav-inner">
       <a class="logo" href="index.html">Jackson Harris</a>
@@ -27,8 +30,8 @@
         <h1>Check out what I'm currently working on</h1>
         <p>Welcome to my portfolio and blog. Here I share projects, papers, and anything else interesting I'm working on.</p>
         <div class="hero-buttons">
-          <a class="button button-primary" href="pages/projects.html">View Projects</a>
-          <a class="button button-secondary" href="pages/blog.html">Read Blog</a>
+          <a class="button button-primary" href="projects.html">View Projects</a>
+          <a class="button button-secondary" href="blog.html">Read Blog</a>
         </div>
       </div>
     </section>
@@ -37,10 +40,10 @@
       <h2 class="section-title">Featured Projects</h2>
       <div class="info-grid">
         <article class="card">
-          <img src="images/profilePic.jpeg" alt="Project one" />
-          <h3>Project One</h3>
-          <p>A short description of the project and what it does.</p>
-          <a href="pages/projectTemplate.html">Live Demo →</a>
+          <img src="images/CERN-BL4S.jpg" alt="Project one" />
+          <h3>CERN BL4S Winner</h3>
+          <p>An exploration of Muon beam dump materials</p>
+          <a href="pages/PROJECT-CernComp.html">Live Demo →</a>
         </article>
 
         <article class="card">
@@ -54,7 +57,9 @@
   </main>
 
   <footer>
-    <div class="container">© 2026 Jackson Harris</div>
+    <div class="container">© Jackson Harris 2026</div>
   </footer>
+
+  <script src="js/space-background.js"></script>
 </body>
 </html>
