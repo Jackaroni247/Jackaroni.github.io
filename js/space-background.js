@@ -19,7 +19,7 @@ class SpaceBackground {
     this.resizeCanvas();
 
     // Create stars with realistic properties
-    this.createStars(1500);
+    this.createStars(500);
 
     // Start animation
     this.animate();
@@ -39,8 +39,8 @@ class SpaceBackground {
         y: Math.random() * this.canvas.height,
         size: Math.random() * 1.5 + 0.2, // Small to medium stars
         brightness: Math.random() * 0.8 + 0.2, // Varying brightness
-        speedX: (Math.random() - 0.5) * 0.05,
-        speedY: (Math.random() - 0.5) * 0.05,
+        speedX: (Math.random() - 0.5) * 0.08,
+        speedY: (Math.random() - 0.5) * 0.08,
         originalSize: Math.random() * 1.5 + 0.2,
         originalBrightness: Math.random() * 0.8 + 0.2,
         twinkleSpeed: Math.random() * 0.02 + 0.005,
@@ -90,7 +90,7 @@ class SpaceBackground {
       star.y += star.speedY;
 
       // Add slight twinkling effect
-      star.brightness = star.originalBrightness + Math.sin(now * star.twinkleSpeed + star.twinklePhase) * 0.3;
+      star.brightness = star.originalBrightness + Math.sin(now * star.twinkleSpeed + star.twinklePhase) * 0.05;
       star.brightness = Math.max(0.1, Math.min(1, star.brightness));
 
       // Reset position if out of bounds
@@ -100,25 +100,14 @@ class SpaceBackground {
         star.y = Math.random() * this.canvas.height;
       }
 
-      // Mouse interaction
-      const dx = this.mouseX - star.x;
-      const dy = this.mouseY - star.y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-
-      if (distance < this.mouseRadius) {
-        const intensity = 1 - (distance / this.mouseRadius);
-        star.brightness = Math.min(1, star.brightness + intensity * 0.7);
-        star.size = star.originalSize + intensity * 2;
-      } else {
         star.size = star.originalSize;
-      }
     }
   }
 
   draw() {
     // Clear canvas with deep space background
-    this.ctx.fillStyle = '#000814';
-    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    //this.ctx.fillStyle = '#000000';
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
     // Draw stars
     for (let i = 0; i < this.stars.length; i++) {
