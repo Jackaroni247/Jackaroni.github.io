@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1.0" />
-  <title>Jackson Harris | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jackson Harris</title>
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <!-- Space background canvas -->
   <canvas id="space-canvas"></canvas>
 
   <header class="navbar">
@@ -15,15 +14,55 @@
       <a class="logo" href="index.html">Jackson Harris</a>
       <nav class="nav-links">
         <a href="about.html">About</a>
-	<a href="projects.html">Projects</a>
-	<a href="blog.html">Blog</a>
-	<a href="contact.html">Contact</a>
-	<a class="resume-btn" href="resume.pdf" target="_blank">Download Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a class="resume-btn" href="resume.pdf" target="_blank">Download CV</a>
       </nav>
     </div>
   </header>
 
-	<script src="js/space-background.js"></script>
-</body>
+  <main>
+    <section class="hero" style="padding-bottom: 3rem;">
+      <div class="container">
+        <p class="eyebrow">Get in Touch</p>
+        <h1>Let's Connect</h1>
+        <p>Whether you have a question about my research, want to collaborate on a project, or just want to chat about physics and computing, feel free to reach out!</p>
+      </div>
+    </section>
 
+    <section class="container">
+      <div class="info-grid">
+        
+        <article class="card">
+          <h3 style="color: var(--accent); margin-bottom: 0.5rem;">Email</h3>
+          <p style="margin-bottom: 0.5rem;">Direct inquiries, research questions, or project discussions:</p>
+          <a href="mailto:jackson@example.com" style="font-weight: 600; text-decoration: underline;">jackson@example.com</a>
+        </article>
+
+        <article class="card">
+          <h3 style="color: var(--accent); margin-bottom: 0.5rem;">Social & Code</h3>
+          <p style="margin-bottom: 1rem;">Find my public repositories and online profiles:</p>
+          <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+            <a href="https://github.com" target="_blank">GitHub →</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn →</a>
+            <a href="https://x.com" target="_blank">Twitter / X →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 style="color: var(--accent); margin-bottom: 0.5rem;">Location & Availability</h3>
+          <p>Based in the United States. Open for remote collaboration, open-source work, and academic research discussions worldwide.</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© Jackson Harris 2026</div>
+  </footer>
+
+  <script src="js/space-background.js"></script>
+</body>
 </html>
