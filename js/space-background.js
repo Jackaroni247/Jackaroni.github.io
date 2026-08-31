@@ -27,7 +27,8 @@ class SpaceBackground {
 
   resizeCanvas() {
     this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
+    this.canvas.height = document.documentElement.scrollHeight;
+    this.createStars(500);;
   }
 
   createStars(count) {
